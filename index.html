@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://www.loopnerd.com.br/artigos/css3/botoes-de-redes-sociais-com-html-e-css/img/favicon.png" type="image/ico">
 <script src="https://www.w3schools.com/lib/w3.js"></script>
 
     <title>Document</title>
@@ -60,7 +61,7 @@
 
 <div class="w3-padding-large" id="main">
 
-  <header class="w3-center w3-black" id="home">
+
     <div  class=" text-center">
     <img src="https://st4.depositphotos.com/3605127/39693/i/450/depositphotos_396932014-stock-photo-computer-games-playing-place-young.jpg" alt="boy" class="w3-image" width="1000" height="438">
       <hr>
@@ -105,11 +106,11 @@
           </div>
         </div>
      </div>
-  </header>
+
   
 <!----------------------------------------------------------------------------------------->
-
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+<div>
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64 w3-container w3-hide London" id="apps">
     <div id="" class="text-center">
       <h2>
         <hr>
@@ -121,7 +122,7 @@
 
 <!----------------------------------------------------------------------------------------->
 
-  <div class="w3-padding-64 w3-content" id="photos">
+  <div class="w3-padding-64 w3-content w3-container w3-hide" id="jogos">
 
     <div id="" class="text-center">
       <h2>
@@ -135,7 +136,7 @@
 
 <!----------------------------------------------------------------------------------------->
 
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+  <div class="w3-padding-64 w3-content w3-text-grey w3-container w3-hide" id="progamas">
 
     <div id="" class="text-center">
       <h2>
@@ -148,9 +149,66 @@
   </div>
 
 <!----------------------------------------------------------------------------------------->
-
+<script>
+  function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  </script>
+</div>
 </div>
 
+
+<!---------------------------------------------------------------------------------------->
+<div class="w3-padding-large" id="main">
+<div class="w3-panel w3-round-xxlarge w3-teal text-center">
+<h3>
+  Jogos em altas
+</h3>
+</div>
+</div>
+
+<!---------------------------------------------------------------------------------------->
+<div class="w3-padding-large" id="main">
+  <div class="w3-panel w3-round-xxlarge w3-teal text-center">
+  <h3>
+    Aplicativos em altas
+  </h3>
+  </div>
+  </div>
+
+<!---------------------------------------------------------------------------------------->
+<div class="w3-padding-large" id="main">
+  <div class="w3-panel w3-round-xxlarge w3-teal text-center">
+  <h3>
+    Progamas em alta
+  </h3>
+  </div>
+  </div>
+
+<!---------------------------------------------------------------------------------------->
+
+<hr>
+<div  class="w3-padding-large text-center" id="main">
+<h4>
+  <br>
+  <p>
+    [2022]
+</h4>
+</div>
+<div class="box-social">
+
+  <a href="#" class="btn-social btn-hover"> <i class="icon icon-facebook"></i></a>
+  <a href="#" class="btn-social btn-hover"> <i class="icon icon-instagram"></i> </a>
+  <a href="#" class="btn-social btn-hover"> <i class="icon icon-twitter"></i> </a>
+  <a href="#" class="btn-social btn-hover"> <i class="icon icon-pinterest"></i> </a>
+
+</div>
+<hr>
 
 </body>
 </html>
